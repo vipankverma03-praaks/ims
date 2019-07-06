@@ -1,0 +1,253 @@
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~slick-carousel/slick/slick.css";
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+@tailwind base;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+/*Slick Carousel css*/
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url("../../static/fonts/Roboto-Italic.ttf")
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../../static/fonts/Roboto-Medium.ttf")
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../../static/fonts/Roboto-Regular.ttf")
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../../static/fonts/Roboto-Light.ttf")
+}
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../../static/fonts/Roboto-Black.ttf")
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../../static/fonts/Roboto-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Rockwell";
+    src: url("../../static/fonts/Rockwell.ttf")
+}
+
+@font-face {
+    font-family: "Marion";
+    src: url("../../static/fonts/Marion.ttf")
+}
+@font-face {
+    font-family: "PlantagenetCherokee";
+    src: url("../../static/fonts/PlantagenetCherokee.ttf")
+}
+
+.homePage .topHeader{
+    position: fixed;
+    top:0;
+    height: 100vh;
+}
+.homePage .secondIntroDiv{
+    position: relative;
+    top:100vh;
+    background: white;
+}
+
+.homePage .centerText{
+    margin: 0 auto;
+}
+.homePage .cardContainer{
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.homePage .qoutesHeading:before{
+    content: "“";
+    font-size: 7rem;
+    color: #0d266c;
+    left: 25px;
+    position: relative;
+    top: 40px;
+    line-height: 0;
+}
+.homePage .qoutesHeading:after{
+    content: "”";
+    position: relative;
+    font-size: 7rem;
+    color: #0d266c;
+    left: 95%;
+    bottom: -10px;
+    line-height: 0;
+}
+.homePage .studentsSpeak , .celebrities ,.notice  ,.placements{
+    background: url("../../static/yellow-texture.jpg") no-repeat 100%;
+}
+
+/*custom css for slick carousel*/
+.carouselImgContainer{
+    width: 12rem !important;
+    display: flex !important;
+}
+
+.carouselRecruiter > .slick-list{
+    margin:  0 4rem;
+}
+
+.homePage .fit-content{
+    width: fit-content;
+    height: fit-content;
+}
+
+.homePage .notice-card-container ul, .announcementContainer ul , .event-inner-container ul, .footer-link-list ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.homePage .events-title{
+    letter-spacing: 1px;
+}
+.homePage .events-gallery-container{
+    height: 22rem;
+}
+/*Outer div*/
+.homePage .event-image-container-1{
+    width: 20%;
+}
+.homePage .event-image-container-2{
+    width: 20%;
+}
+.homePage .event-image-container-3{
+    width: 20%;
+}
+.homePage .event-image-container-4{
+    width: 45%;
+}
+/*Outer div*/
+
+/*Inner div-2*/
+.homePage .event-image-inner-2-1{
+    height: 60%;
+}
+.homePage .event-image-inner-2-2{
+    height: 40%;
+}
+/*Inner div-2*/
+
+/*Inner div-3*/
+.homePage .event-image-inner-3-1{
+    height: 40%;
+}
+.homePage .event-image-inner-3-2{
+    height: 60%;
+}
+/*Inner div-3*/
+
+/*Inner div-4*/
+.homePage .event-image-inner-4-1{
+    height: 60%;
+}
+.homePage .event-image-inner-4-2{
+    height: 40%;
+}
+/*Inner div-4*/
+
+/*Inner Inside-1*/
+.homePage .event-image-inner-inside-1{
+    width: 30%;
+}
+.homePage .event-image-inner-inside-2{
+    width: 36%;
+}
+.homePage .event-image-inner-inside-3{
+    width: 34%;
+}
+/*Inner Inside-1*/
+
+/*Inner Inside-2*/
+.homePage .event-image-inner-inside-4{
+    width: 40%;
+}
+.homePage .event-image-inner-inside-5{
+    width: 26%;
+}
+.homePage .event-image-inner-inside-6{
+    width: 34%;
+}
+/*Inner Inside-2*/
+
+.homePage .footer-contact-section{
+    margin: 3rem;
+}
+.top-bar-text{
+    margin: auto 0;
+}
+
+.homePage .footer-links-container{
+    flex-grow: 2;
+}
