@@ -21,6 +21,7 @@
     "gatsby-source-filesystem": "^2.1.0",
     "gatsby-transformer-sharp": "^2.2.0",
     "node-sass-chokidar": "^1.3.5",
+    "postcss-cli": "^6.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -40,9 +41,9 @@
     "portfolio"
   ],
   "scripts": {
-    "dev": "gatsby develop -o",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev": "gatsby develop -o",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
